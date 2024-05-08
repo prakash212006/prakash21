@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <head>
+        <title>Webpage Design</title>
+        <link rel="stylesheet" href="prakash.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    </head>
+    <body background="b:\Personal\Chrome downloads\pikachu.jpg">
+    
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">PraRoz</h2>
+                </div>
+    
+                <div class="menu">
+                    <ul>
+                        <li><a href="B:\Record\Mathan\fwd\mathan.html">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SERVICE</a></li>
+                        <li><a href="#">DESIGN</a></li>
+                        <li><a href="#">CONTACT</a></li>
+    </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" name="" placeholder="Type To text">
+            <a href="#"> <button class="btn">Search</button></a>
+        </div>
+            <div class="form">
+                <h2>Login Here</h2>
+                <input type="email" name="email" placeholder="Enter Email Here">
+                <input type="password" name="" placeholder="Enter Password Here">
+                <button type="submit" class="btnn"><a href="prakash1.html">Login</a></button>
+
+                <p class="link">Don't have an account<br>
+                <a href="prakash1.html">Sign up </a>here</a></p>
+                <p class="liw">Log in with</p>
+
+                <div class="social-icon">
+                    <div class="icon-pack">
+                        <a href="#" title="Facebook"> <i class="fab fa-facebook-square"></i> </a>
+                        <a href="#" title="Twitter"> <i class="fab fa-twitter-square"></i> </a>
+                        <a href="#" title="Google Plus"> <i class="fab fa-google-plus-square"></i> </a>
+                    </div>
+        
+
+            </div>
+                </div>
+            </div>
+    </div>
+</div>
+<script>
+    (function(doc){
+  var scriptElm = doc.scripts[doc.scripts.length - 1];
+  var warn = ['[ionicons] Deprecated script, please remove: ' + scriptElm.outerHTML];
+
+  warn.push('To improve performance it is recommended to set the differential scripts in the head as follows:')
+
+  var parts = scriptElm.src.split('/');
+  parts.pop();
+  parts.push('ionicons');
+  var url = parts.join('/');
+
+  var scriptElm = doc.createElement('script');
+  scriptElm.setAttribute('type', 'module');
+  scriptElm.src = url + '/ionicons.esm.js';
+  warn.push(scriptElm.outerHTML);
+  scriptElm.setAttribute('data-stencil-namespace', 'ionicons');
+  doc.head.appendChild(scriptElm);
+
+  
+  scriptElm = doc.createElement('script');
+  scriptElm.setAttribute('nomodule', '');
+  scriptElm.src = url + '/ionicons.js';
+  warn.push(scriptElm.outerHTML);
+  scriptElm.setAttribute('data-stencil-namespace', 'ionicons');
+  doc.head.appendChild(scriptElm)
+  
+  console.warn(warn.join('\n'));
+
+})(document);
+</script>
+</body>
+</html>
